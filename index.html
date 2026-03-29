@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kings Barbearia — Muito além de um corte. Experiência premium em cada visita." />
+  <title>Kings Barbearia | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=80&h=80&fit=crop&crop=face"
+          alt="Logo Kings Barbearia"
+          class="logo__img"
+        />
+        <span class="logo__texto">Kings Barbearia</span>
+      </a>
+ 
+      <button class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+ 
+      <nav class="nav" id="nav">
+        <ul class="nav__lista">
+          <li><a href="index.html" class="ativo">Home</a></li>
+          <li><a href="pages/servicos.html">Serviços</a></li>
+          <li><a href="pages/equipe.html">Equipe</a></li>
+          <li><a href="pages/agendamento.html">Agendar</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__conteudo">
+      <p class="hero__label">Desde 2015 · São Paulo</p>
+      <h1 class="hero__titulo">
+        Muito além<br />de um <em>corte</em>
+      </h1>
+      <p class="hero__subtitulo">
+        A Kings é o refúgio do homem que se cuida. Onde cada detalhe é tratado com precisão,
+        respeito e estilo. Venha viver essa experiência.
+      </p>
+      <div class="hero__botoes">
+        <a href="pages/agendamento.html" class="btn btn--primario">Agendar horário</a>
+        <a href="pages/servicos.html" class="btn btn--outline">Ver serviços</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== POR QUE A KINGS ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Por que a Kings?</p>
+    <h2 class="secao__titulo">Uma experiência<br />diferente de tudo</h2>
+    <div class="divisor"></div>
+    <p class="secao__descricao">
+      Na Kings, cada visita é pensada do começo ao fim. Do ambiente ao atendimento,
+      do produto à técnica — tudo converge para que você saia outro homem.
+    </p>
+ 
+    <div class="servicos__grid mt-2">
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80"
+          alt="Corte de cabelo masculino"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Corte Masculino</h3>
+          <p class="card-servico__descricao">Técnica apurada, acabamento impecável. Do clássico ao moderno.</p>
+          <span class="card-servico__preco">A partir de R$ 60</span>
+        </div>
+      </div>
+ 
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80"
+          alt="Barba na navalha"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Barba na Navalha</h3>
+          <p class="card-servico__descricao">Ritual completo: toalha quente, espuma artesanal e navalha precisa.</p>
+          <span class="card-servico__preco">A partir de R$ 50</span>
+        </div>
+      </div>
+ 
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1592647420148-bfcc177e2117?w=600&q=80"
+          alt="Tratamento capilar"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Tratamento Capilar</h3>
+          <p class="card-servico__descricao">Hidratação, cauterização e reconstrução para fios saudáveis.</p>
+          <span class="card-servico__preco">A partir de R$ 80</span>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="centralizado mt-2">
+      <a href="pages/servicos.html" class="btn btn--outline">Ver todos os serviços</a>
+    </div>
+  </section>
+ 
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="secao secao--media">
+    <p class="secao__label">Nossos Clientes</p>
+    <h2 class="secao__titulo">O que dizem<br />sobre a Kings</h2>
+    <div class="divisor"></div>
+ 
+    <div class="depoimentos__lista">
+      <div class="depoimento">
+        <p class="estrelas">★★★★★</p>
+        <p class="depoimento__texto">
+          "Ir à Kings é mais do que um corte. É um momento de cuidado pessoal. Saí renovado e confiante.
+          O ambiente é incrível e os profissionais são de alto nível."
+        </p>
+        <span class="depoimento__autor">— Rafael M.</span>
+      </div>
+ 
+      <div class="depoimento">
+        <p class="estrelas">★★★★★</p>
+        <p class="depoimento__texto">
+          "Fiz corte, barba e sobrancelha. Resultado impecável. Recomendo para quem quer
+          dar um up no visual e no bem-estar. Melhor barbearia da cidade!"
+        </p>
+        <span class="depoimento__autor">— Lucas P.</span>
+      </div>
+ 
+      <div class="depoimento">
+        <p class="estrelas">★★★★★</p>
+        <p class="depoimento__texto">
+          "Ambiente premium, atendimento de excelência e preço justo. Não troco a Kings
+          por nada. Virou minha barbearia oficial há 2 anos."
+        </p>
+        <span class="depoimento__autor">— Bruno S.</span>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== GALERIA ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Galeria</p>
+    <h2 class="secao__titulo">Cada detalhe conta<br />a nossa história</h2>
+    <div class="divisor"></div>
+ 
+    <div class="galeria">
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400&q=80" alt="Barbeiro trabalhando" />
+      </div>
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&q=80" alt="Corte moderno" />
+      </div>
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=400&q=80" alt="Barba navalha" />
+      </div>
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=400&q=80" alt="Ambiente barbearia" />
+      </div>
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1595152452543-e5fc22edf54d?w=400&q=80" alt="Detalhe do corte" />
+      </div>
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1570569363731-be1e95fdc586?w=400&q=80" alt="Ferramentas de barbeiro" />
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== CTA ===== -->
+  <section class="banner-cta">
+    <h2 class="banner-cta__titulo">Pronto para uma nova versão de você?</h2>
+    <p class="banner-cta__texto">Agende agora e garanta seu horário com nossos especialistas.</p>
+    <a href="pages/agendamento.html" class="btn btn--escuro">Agendar meu horário</a>
+  </section>
+ 
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__conteudo">
+      <div>
+        <p class="footer__logo">Kings Barbearia</p>
+        <p class="footer__descricao">
+          Muito além de uma barbearia. Transformamos minutos de cuidado em confiança
+          e estilo para homens que querem o melhor.
+        </p>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="rede-social" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="rede-social" aria-label="Facebook">👍</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="rede-social" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+ 
+      <div>
+        <p class="footer__nav-titulo">Navegação</p>
+        <ul class="footer__nav-lista">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/servicos.html">Serviços</a></li>
+          <li><a href="pages/equipe.html">Equipe</a></li>
+          <li><a href="pages/agendamento.html">Agendar</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+      </div>
+ 
+      <div>
+        <p class="footer__nav-titulo">Serviços</p>
+        <ul class="footer__nav-lista">
+          <li><a href="pages/servicos.html">Corte Masculino</a></li>
+          <li><a href="pages/servicos.html">Barba na Navalha</a></li>
+          <li><a href="pages/servicos.html">Tratamento Capilar</a></li>
+          <li><a href="pages/servicos.html">Combo Completo</a></li>
+        </ul>
+      </div>
+    </div>
+ 
+    <div class="footer__fundo">
+      <p>© 2025 Kings Barbearia. Todos os direitos reservados.</p>
+      <p>Desenvolvido com 💛 para o projeto acadêmico</p>
+    </div>
+  </footer>
+ 
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('aberto');
+    }
+  </script>
+</body>
+</html>
+ 

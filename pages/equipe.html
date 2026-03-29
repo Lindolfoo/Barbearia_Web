@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conheça a equipe de barbeiros da Kings Barbearia." />
+  <title>Kings Barbearia | Nossa Equipe</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="logo">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=80&h=80&fit=crop&crop=face"
+          alt="Logo Kings Barbearia"
+          class="logo__img"
+        />
+        <span class="logo__texto">Kings Barbearia</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipe.html" class="ativo">Equipe</a></li>
+          <li><a href="agendamento.html">Agendar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <p class="page-header__label">✦ Profissionais</p>
+    <h1 class="page-header__titulo">Nossa <em class="destaque">Equipe</em></h1>
+  </div>
+
+  <!-- ===== EQUIPE ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Os melhores do ramo</p>
+    <h2 class="secao__titulo">Barbeiros que são<br />verdadeiros artistas</h2>
+    <div class="divisor"></div>
+    <p class="secao__descricao">
+      Cada profissional da Kings foi cuidadosamente selecionado pela técnica, dedicação
+      e paixão pelo que faz. Mais de 10 anos de experiência coletiva ao seu serviço.
+    </p>
+
+    <div class="equipe__grid mt-2">
+
+      <div class="card-barbeiro">
+        <img
+          src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=500&fit=crop&crop=face"
+          alt="Foto do barbeiro Carlos Silva"
+          class="card-barbeiro__img"
+        />
+        <div class="card-barbeiro__info">
+          <h3 class="card-barbeiro__nome">Carlos Silva</h3>
+          <p class="card-barbeiro__cargo">Fundador & Master Barber</p>
+          <p class="card-barbeiro__bio">
+            15 anos de experiência. Especialista em fade e degradê clássico.
+            Formado em São Paulo e Nova York.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-barbeiro">
+        <img
+          src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?w=400&h=500&fit=crop&crop=face"
+          alt="Foto do barbeiro André Costa"
+          class="card-barbeiro__img"
+        />
+        <div class="card-barbeiro__info">
+          <h3 class="card-barbeiro__nome">André Costa</h3>
+          <p class="card-barbeiro__cargo">Barba & Navalha Specialist</p>
+          <p class="card-barbeiro__bio">
+            Especialista em barbearia clássica. Ritual de barba na navalha
+            com toalha quente é sua marca registrada.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-barbeiro">
+        <img
+          src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop&crop=face"
+          alt="Foto do barbeiro Matheus Lima"
+          class="card-barbeiro__img"
+        />
+        <div class="card-barbeiro__info">
+          <h3 class="card-barbeiro__nome">Matheus Lima</h3>
+          <p class="card-barbeiro__cargo">Colorista & Tratamentos</p>
+          <p class="card-barbeiro__bio">
+            Referência em coloração masculina e tratamentos capilares.
+            Cada cliente sai com a cor perfeita para seu tipo.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-barbeiro">
+        <img
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face"
+          alt="Foto do barbeiro Felipe Rocha"
+          class="card-barbeiro__img"
+        />
+        <div class="card-barbeiro__info">
+          <h3 class="card-barbeiro__nome">Felipe Rocha</h3>
+          <p class="card-barbeiro__cargo">Corte Moderno & Design</p>
+          <p class="card-barbeiro__bio">
+            Especialista em cortes modernos, undercut e estilos urbanos.
+            Traz as tendências internacionais para o seu visual.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== TABELA DA EQUIPE ===== -->
+  <section class="secao secao--media">
+    <p class="secao__label">Especialidades</p>
+    <h2 class="secao__titulo">Quem faz o quê<br />na Kings</h2>
+    <div class="divisor"></div>
+
+    <div class="tabela-wrapper">
+      <table class="tabela-precos">
+        <thead>
+          <tr>
+            <th>Barbeiro</th>
+            <th>Especialidade Principal</th>
+            <th>Experiência</th>
+            <th>Disponibilidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carlos Silva</td>
+            <td>Fade clássico &amp; degradê</td>
+            <td>15 anos</td>
+            <td>Seg–Sáb</td>
+          </tr>
+          <tr>
+            <td>André Costa</td>
+            <td>Barba na navalha</td>
+            <td>10 anos</td>
+            <td>Ter–Dom</td>
+          </tr>
+          <tr>
+            <td>Matheus Lima</td>
+            <td>Coloração &amp; tratamentos</td>
+            <td>8 anos</td>
+            <td>Seg–Sex</td>
+          </tr>
+          <tr>
+            <td>Felipe Rocha</td>
+            <td>Cortes modernos &amp; design</td>
+            <td>6 anos</td>
+            <td>Qua–Dom</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Nosso trabalho</p>
+    <h2 class="secao__titulo">Resultados que<br />falam por si</h2>
+    <div class="divisor"></div>
+
+    <div class="galeria mt-2">
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400&q=80" alt="Resultado corte 1" />
+      </div>
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&q=80" alt="Resultado corte 2" />
+      </div>
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=400&q=80" alt="Resultado corte 3" />
+      </div>
+      <div class="galeria__item">
+        <img src="https://images.unsplash.com/photo-1595152452543-e5fc22edf54d?w=400&q=80" alt="Resultado corte 4" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="banner-cta">
+    <h2 class="banner-cta__titulo">Escolha seu barbeiro favorito</h2>
+    <p class="banner-cta__texto">Agende com o profissional da sua preferência.</p>
+    <a href="agendamento.html" class="btn btn--escuro">Agendar agora</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__conteudo">
+      <div>
+        <p class="footer__logo">Kings Barbearia</p>
+        <p class="footer__descricao">Muito além de uma barbearia. Transformamos minutos de cuidado em confiança e estilo.</p>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="rede-social" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="rede-social" aria-label="Facebook">👍</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="rede-social" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__nav-titulo">Navegação</p>
+        <ul class="footer__nav-lista">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="agendamento.html">Agendar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__nav-titulo">Redes Sociais</p>
+        <ul class="footer__nav-lista">
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__fundo">
+      <p>© 2025 Kings Barbearia. Todos os direitos reservados.</p>
+      <p>Desenvolvido com 💛 para o projeto acadêmico</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav').classList.toggle('aberto');
+    }
+  </script>
+</body>
+</html>

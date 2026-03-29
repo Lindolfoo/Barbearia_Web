@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com a Kings Barbearia — localização, telefone e redes sociais." />
+  <title>Kings Barbearia | Contato</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="logo">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=80&h=80&fit=crop&crop=face"
+          alt="Logo Kings Barbearia"
+          class="logo__img"
+        />
+        <span class="logo__texto">Kings Barbearia</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="agendamento.html">Agendar</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <p class="page-header__label">✦ Fale conosco</p>
+    <h1 class="page-header__titulo">Entre em <em class="destaque">Contato</em></h1>
+  </div>
+
+  <!-- ===== CONTATO + MAPA ===== -->
+  <section class="secao secao--escura">
+    <div class="contato__layout">
+
+      <!-- Informações de contato -->
+      <div>
+        <p class="secao__label">Nossa localização</p>
+        <h2 class="secao__titulo">Onde nos<br />encontrar</h2>
+        <div class="divisor"></div>
+
+        <div class="contato__infos">
+          <div class="contato__item">
+            <span class="contato__icone">📍</span>
+            <div>
+              <p class="contato__item-titulo">Endereço</p>
+              <p class="contato__item-texto">Rua das Palmeiras, 742<br />Vila Madalena, São Paulo – SP<br />CEP 05436-000</p>
+            </div>
+          </div>
+
+          <div class="contato__item">
+            <span class="contato__icone">📞</span>
+            <div>
+              <p class="contato__item-titulo">Telefone</p>
+              <p class="contato__item-texto">
+                <a href="tel:+5511999999999" class="link-dourado">(11) 99999-9999</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contato__item">
+            <span class="contato__icone">✉️</span>
+            <div>
+              <p class="contato__item-titulo">E-mail</p>
+              <p class="contato__item-texto">
+                <a href="mailto:contato@kingsbarbearia.com.br" class="link-dourado">contato@kingsbarbearia.com.br</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contato__item">
+            <span class="contato__icone">🕐</span>
+            <div>
+              <p class="contato__item-titulo">Horário de funcionamento</p>
+              <p class="contato__item-texto">
+                Seg–Sex: 10h às 20h<br />
+                Sábado: 09h às 19h<br />
+                Domingo: 10h às 15h
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Redes Sociais (links externos) -->
+        <p class="secao__label mt-2">Siga a Kings</p>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="rede-social" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="rede-social" aria-label="Facebook">👍</a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener" class="rede-social" aria-label="TikTok">🎵</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="rede-social" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+
+      <!-- Formulário de Contato -->
+      <div>
+        <p class="secao__label">Envie uma mensagem</p>
+        <h2 class="secao__titulo">Fale com<br />a nossa equipe</h2>
+        <div class="divisor"></div>
+
+        <form class="form-coluna" onsubmit="enviarContato(event)">
+
+          <div class="form-grupo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="" disabled selected>Selecione o assunto</option>
+              <option>Agendamento</option>
+              <option>Dúvidas sobre serviços</option>
+              <option>Reclamação / Sugestão</option>
+              <option>Parcerias</option>
+              <option>Outros</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primario btn--full">
+            Enviar Mensagem
+          </button>
+        </form>
+
+        <div id="contato-sucesso" class="alerta-sucesso oculto">
+          <p class="alerta-sucesso__titulo">✓ Mensagem enviada!</p>
+          <p class="alerta-sucesso__texto">Responderemos em breve. Obrigado pelo contato!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== MAPA EMBED ===== -->
+  <section class="secao secao--media secao--sem-topo">
+    <div class="mapa-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.099!2d-46.6906!3d-23.5413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzI4LjciUyA0NsKwNDEnMjYuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+        width="100%"
+        height="100%"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Localização Kings Barbearia"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- ===== TABELA DE UNIDADES ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Nossa unidade</p>
+    <h2 class="secao__titulo">Informações<br />completas</h2>
+    <div class="divisor"></div>
+
+    <div class="tabela-wrapper">
+      <table class="tabela-precos">
+        <thead>
+          <tr>
+            <th>Canal</th>
+            <th>Contato</th>
+            <th>Disponível</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>WhatsApp</td>
+            <td>(11) 99999-9999</td>
+            <td>07h às 22h</td>
+          </tr>
+          <tr>
+            <td>Telefone</td>
+            <td>(11) 3333-3333</td>
+            <td>Horário comercial</td>
+          </tr>
+          <tr>
+            <td>E-mail</td>
+            <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1d7e7273697c69725d7674737a6e7f7c6f7f787c6f747c337e7270337f6f">[email&#160;protected]</a></td>
+            <td>Resposta em 24h</td>
+          </tr>
+          <tr>
+            <td>Instagram</td>
+            <td>@kingsbarbearia</td>
+            <td>Sempre</td>
+          </tr>
+          <tr>
+            <td>Presencialmente</td>
+            <td>Rua das Palmeiras, 742 — Vila Madalena</td>
+            <td>Conforme horário</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="banner-cta">
+    <h2 class="banner-cta__titulo">Pronto para o próximo nível?</h2>
+    <p class="banner-cta__texto">Agende agora e viva a experiência Kings.</p>
+    <a href="agendamento.html" class="btn btn--escuro">Agendar horário</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__conteudo">
+      <div>
+        <p class="footer__logo">Kings Barbearia</p>
+        <p class="footer__descricao">Muito além de uma barbearia. Transformamos minutos de cuidado em confiança e estilo.</p>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="rede-social" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="rede-social" aria-label="Facebook">👍</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="rede-social" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__nav-titulo">Navegação</p>
+        <ul class="footer__nav-lista">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="agendamento.html">Agendar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__nav-titulo">Redes Sociais</p>
+        <ul class="footer__nav-lista">
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__fundo">
+      <p>© 2025 Kings Barbearia. Todos os direitos reservados.</p>
+      <p>Desenvolvido com 💛 para o projeto acadêmico</p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" 

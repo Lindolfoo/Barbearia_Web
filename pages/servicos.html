@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Serviços e tabela de preços da Kings Barbearia." />
+  <title>Kings Barbearia | Serviços</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="logo">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=80&h=80&fit=crop&crop=face"
+          alt="Logo Kings Barbearia"
+          class="logo__img"
+        />
+        <span class="logo__texto">Kings Barbearia</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="servicos.html" class="ativo">Serviços</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="agendamento.html">Agendar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <p class="page-header__label">✦ O que oferecemos</p>
+    <h1 class="page-header__titulo">Nossos Serviços<br /><em class="destaque">& Preços</em></h1>
+  </div>
+
+  <!-- ===== CARDS DE SERVIÇOS ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Catálogo completo</p>
+    <h2 class="secao__titulo">Tudo que você<br />precisa em um lugar</h2>
+    <div class="divisor"></div>
+
+    <div class="servicos__grid mt-2">
+
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80"
+          alt="Corte de cabelo masculino"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Corte Masculino</h3>
+          <p class="card-servico__descricao">
+            Do clássico ao mais moderno. Tesoura, máquina ou degradê — técnica apurada para o seu estilo.
+          </p>
+          <span class="card-servico__preco">A partir de R$ 60</span>
+        </div>
+      </div>
+
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80"
+          alt="Barba na navalha"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Barba na Navalha</h3>
+          <p class="card-servico__descricao">
+            Ritual completo com toalha quente, espuma artesanal, navalha e finalização com produtos premium.
+          </p>
+          <span class="card-servico__preco">A partir de R$ 50</span>
+        </div>
+      </div>
+
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1592647420148-bfcc177e2117?w=600&q=80"
+          alt="Tratamento capilar"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Tratamento Capilar</h3>
+          <p class="card-servico__descricao">
+            Hidratação profunda, cauterização e reconstrução. Fios mais saudáveis e manejáveis.
+          </p>
+          <span class="card-servico__preco">A partir de R$ 80</span>
+        </div>
+      </div>
+
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1595152452543-e5fc22edf54d?w=600&q=80"
+          alt="Sobrancelha masculina"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Design de Sobrancelha</h3>
+          <p class="card-servico__descricao">
+            Modelagem precisa para o rosto masculino. Fio a fio ou com cera, o resultado é natural e marcado.
+          </p>
+          <span class="card-servico__preco">A partir de R$ 30</span>
+        </div>
+      </div>
+
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1570569363731-be1e95fdc586?w=600&q=80"
+          alt="Coloração masculina"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Coloração</h3>
+          <p class="card-servico__descricao">
+            Cobertura de brancos, luzes, mechas e coloração personalizada. Discreta ou marcante.
+          </p>
+          <span class="card-servico__preco">A partir de R$ 90</span>
+        </div>
+      </div>
+
+      <div class="card-servico">
+        <img
+          src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80"
+          alt="Combo Kings completo"
+          class="card-servico__img"
+        />
+        <div class="card-servico__corpo">
+          <h3 class="card-servico__nome">Combo Kings</h3>
+          <p class="card-servico__descricao">
+            A experiência completa: corte + barba + sobrancelha + tratamento. O melhor do melhor.
+          </p>
+          <span class="card-servico__preco">A partir de R$ 150</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== TABELA DE PREÇOS ===== -->
+  <section class="secao secao--media">
+    <p class="secao__label">Tabela de preços</p>
+    <h2 class="secao__titulo">Transparência<br />em cada serviço</h2>
+    <div class="divisor"></div>
+    <p class="secao__descricao">Preços claros, sem surpresa. Qualidade que vale cada centavo.</p>
+
+    <div class="tabela-wrapper">
+      <table class="tabela-precos">
+        <thead>
+          <tr>
+            <th>Serviço</th>
+            <th>Descrição</th>
+            <th>Duração</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Corte Simples</td>
+            <td>Máquina ou tesoura, sem degradê</td>
+            <td>30 min</td>
+            <td>R$ 60</td>
+          </tr>
+          <tr>
+            <td>Corte com Degradê</td>
+            <td>Fade, low fade ou high fade</td>
+            <td>45 min</td>
+            <td>R$ 75</td>
+          </tr>
+          <tr>
+            <td>Barba Simples</td>
+            <td>Aparar e modelar com máquina</td>
+            <td>20 min</td>
+            <td>R$ 50</td>
+          </tr>
+          <tr>
+            <td>Barba na Navalha</td>
+            <td>Ritual completo com toalha quente</td>
+            <td>40 min</td>
+            <td>R$ 70</td>
+          </tr>
+          <tr>
+            <td>Sobrancelha</td>
+            <td>Design e modelagem com cera ou fio</td>
+            <td>15 min</td>
+            <td>R$ 30</td>
+          </tr>
+          <tr>
+            <td>Hidratação Capilar</td>
+            <td>Máscara profissional + selagem</td>
+            <td>30 min</td>
+            <td>R$ 80</td>
+          </tr>
+          <tr>
+            <td>Coloração</td>
+            <td>Cobertura de brancos ou coloração</td>
+            <td>60 min</td>
+            <td>R$ 90</td>
+          </tr>
+          <tr>
+            <td>Luzes / Mechas</td>
+            <td>Clarear ou realçar fios selecionados</td>
+            <td>90 min</td>
+            <td>R$ 130</td>
+          </tr>
+          <tr>
+            <td>Combo Kings</td>
+            <td>Corte + Barba + Sobrancelha + Hidratação</td>
+            <td>2h</td>
+            <td>R$ 150</td>
+          </tr>
+          <tr>
+            <td>Combo Premium</td>
+            <td>Combo Kings + Coloração + Tratamento</td>
+            <td>2h30</td>
+            <td>R$ 220</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== LISTA DE BENEFÍCIOS ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Nossos diferenciais</p>
+    <h2 class="secao__titulo">O que está incluído<br />em todo serviço</h2>
+    <div class="divisor"></div>
+
+    <ul class="horarios__lista mt-2">
+      <li>
+        <span>☕ Bebida de boas-vindas</span>
+        <span>Café, água ou cerveja artesanal</span>
+      </li>
+      <li>
+        <span>🧴 Produtos premium</span>
+        <span>Marcas nacionais e importadas</span>
+      </li>
+      <li>
+        <span>🔥 Toalha quente</span>
+        <span>Em todos os serviços de barba</span>
+      </li>
+      <li>
+        <span>💆 Massagem capilar</span>
+        <span>Inclusa em todos os cortes</span>
+      </li>
+      <li>
+        <span>📱 Wi-Fi grátis</span>
+        <span>Ambiente conectado e relaxante</span>
+      </li>
+      <li>
+        <span>🅿️ Estacionamento</span>
+        <span>Convênio com estacionamento próximo</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="banner-cta">
+    <h2 class="banner-cta__titulo">Escolheu seu serviço?</h2>
+    <p class="banner-cta__texto">Agende agora e garanta seu horário com nossos especialistas.</p>
+    <a href="agendamento.html" class="btn btn--escuro">Agendar meu horário</a>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__conteudo">
+      <div>
+        <p class="footer__logo">Kings Barbearia</p>
+        <p class="footer__descricao">
+          Muito além de uma barbearia. Transformamos minutos de cuidado em
+          confiança e estilo para homens que querem o melhor.
+        </p>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="rede-social" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="rede-social" aria-label="Facebook">👍</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="rede-social" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__nav-titulo">Navegação</p>
+        <ul class="footer__nav-lista">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="agendamento.html">Agendar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__nav-titulo">Serviços</p>
+        <ul class="footer__nav-lista">
+          <li><a href="servicos.html">Corte Masculino</a></li>
+          <li><a href="servicos.html">Barba na Navalha</a></li>
+          <li><a href="servicos.html">Tratamento Capilar</a></li>
+          <li><a href="servicos.html">Combo Kings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__fundo">
+      <p>© 2025 Kings Barbearia. Todos os direitos reservados.</p>
+      <p>Desenvolvido com 💛 para o projeto acadêmico</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav').classList.toggle('aberto');
+    }
+  </script>
+</body>
+</html>

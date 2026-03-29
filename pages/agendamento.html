@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agende seu horário na Kings Barbearia de forma rápida e fácil." />
+  <title>Kings Barbearia | Agendamento</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="logo">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=80&h=80&fit=crop&crop=face"
+          alt="Logo Kings Barbearia"
+          class="logo__img"
+        />
+        <span class="logo__texto">Kings Barbearia</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="agendamento.html" class="ativo">Agendar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <p class="page-header__label">✦ Reserve seu horário</p>
+    <h1 class="page-header__titulo">Agendamento<br /><em class="destaque">Online</em></h1>
+  </div>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Simples e rápido</p>
+    <h2 class="secao__titulo">Como funciona<br />o agendamento</h2>
+    <div class="divisor"></div>
+
+    <!-- Lista Ordenada (OL) — requisito do projeto -->
+    <ol class="passos mt-2">
+      <li class="passo">
+        <div class="passo__texto">
+          <strong>Preencha o formulário</strong>
+          <p>Informe seus dados, serviço desejado, barbeiro de preferência, data e horário.</p>
+        </div>
+      </li>
+      <li class="passo">
+        <div class="passo__texto">
+          <strong>Aguarde a confirmação</strong>
+          <p>Nossa equipe entrará em contato via WhatsApp para confirmar o agendamento em até 30 minutos.</p>
+        </div>
+      </li>
+      <li class="passo">
+        <div class="passo__texto">
+          <strong>Apareça no dia e horário</strong>
+          <p>Chegar com 5 minutos de antecedência garante que seu atendimento comece no tempo certo.</p>
+        </div>
+      </li>
+      <li class="passo">
+        <div class="passo__texto">
+          <strong>Viva a experiência Kings</strong>
+          <p>Relaxe, aproveite o ambiente e saia transformado. Simples assim.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== FORMULÁRIO ===== -->
+  <section class="secao secao--media">
+    <p class="secao__label">Formulário</p>
+    <h2 class="secao__titulo">Preencha seus<br />dados abaixo</h2>
+    <div class="divisor"></div>
+
+    <form class="form-agendamento" onsubmit="enviarForm(event)">
+
+      <div class="form-grupo">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+      </div>
+
+      <div class="form-grupo">
+        <label for="telefone">WhatsApp</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required />
+      </div>
+
+      <div class="form-grupo">
+        <label for="servico">Serviço</label>
+        <select id="servico" name="servico" required>
+          <option value="" disabled selected>Selecione o serviço</option>
+          <option value="corte-simples">Corte Simples — R$ 60</option>
+          <option value="corte-degradê">Corte com Degradê — R$ 75</option>
+          <option value="barba-simples">Barba Simples — R$ 50</option>
+          <option value="barba-navalha">Barba na Navalha — R$ 70</option>
+          <option value="sobrancelha">Design de Sobrancelha — R$ 30</option>
+          <option value="hidratacao">Hidratação Capilar — R$ 80</option>
+          <option value="coloracao">Coloração — R$ 90</option>
+          <option value="combo-kings">Combo Kings — R$ 150</option>
+          <option value="combo-premium">Combo Premium — R$ 220</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="barbeiro">Barbeiro</label>
+        <select id="barbeiro" name="barbeiro">
+          <option value="" disabled selected>Selecione (opcional)</option>
+          <option value="carlos">Carlos Silva — Fade &amp; Degradê</option>
+          <option value="andre">André Costa — Barba na Navalha</option>
+          <option value="matheus">Matheus Lima — Coloração</option>
+          <option value="felipe">Felipe Rocha — Cortes Modernos</option>
+          <option value="qualquer">Sem preferência</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data" required />
+      </div>
+
+      <div class="form-grupo">
+        <label for="horario">Horário preferido</label>
+        <select id="horario" name="horario" required>
+          <option value="" disabled selected>Selecione o horário</option>
+          <option>09:00</option>
+          <option>09:30</option>
+          <option>10:00</option>
+          <option>10:30</option>
+          <option>11:00</option>
+          <option>11:30</option>
+          <option>13:00</option>
+          <option>13:30</option>
+          <option>14:00</option>
+          <option>14:30</option>
+          <option>15:00</option>
+          <option>15:30</option>
+          <option>16:00</option>
+          <option>16:30</option>
+          <option>17:00</option>
+          <option>17:30</option>
+          <option>18:00</option>
+          <option>18:30</option>
+          <option>19:00</option>
+        </select>
+      </div>
+
+      <div class="form-grupo form-grupo--full">
+        <label for="observacoes">Observações (opcional)</label>
+        <textarea id="observacoes" name="observacoes" placeholder="Alguma preferência especial, alergia ou informação adicional..."></textarea>
+      </div>
+
+      <div class="form-grupo--full">
+        <button type="submit" class="btn btn--primario btn--full">
+          Solicitar Agendamento
+        </button>
+      </div>
+
+    </form>
+
+    <div id="mensagem-sucesso" class="alerta-sucesso oculto">
+      <p class="alerta-sucesso__titulo">✓ Solicitação enviada!</p>
+      <p class="alerta-sucesso__texto">Entraremos em contato via WhatsApp em até 30 minutos para confirmar seu horário.</p>
+    </div>
+  </section>
+
+  <!-- ===== HORÁRIOS DE FUNCIONAMENTO ===== -->
+  <section class="secao secao--escura">
+    <p class="secao__label">Horário de funcionamento</p>
+    <h2 class="secao__titulo">Quando estamos<br />disponíveis</h2>
+    <div class="divisor"></div>
+
+    <ul class="horarios__lista mt-1">
+      <li><span>Segunda-feira</span><span>10h às 20h</span></li>
+      <li><span>Terça-feira</span><span>10h às 20h</span></li>
+      <li><span>Quarta-feira</span><span>10h às 20h</span></li>
+      <li><span>Quinta-feira</span><span>10h às 20h</span></li>
+      <li><span>Sexta-feira</span><span>10h às 21h</span></li>
+      <li><span>Sábado</span><span>09h às 19h</span></li>
+      <li><span>Domingo</span><span>10h às 15h</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== CTA WhatsApp ===== -->
+  <section class="banner-cta">
+    <h2 class="banner-cta__titulo">Prefere pelo WhatsApp?</h2>
+    <p class="banner-cta__texto">Fale diretamente com nossa equipe e agende em minutos.</p>
+    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20na%20Kings%20Barbearia!"
+       target="_blank" rel="noopener" class="btn btn--escuro">
+      💬 Falar no WhatsApp
+    </a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__conteudo">
+      <div>
+        <p class="footer__logo">Kings Barbearia</p>
+        <p class="footer__descricao">Muito além de uma barbearia. Transformamos minutos de cuidado em confiança e estilo.</p>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="rede-social" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="rede-social" aria-label="Facebook">👍</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="rede-social" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__nav-titulo">Navegação</p>
+        <ul class="footer__nav-lista">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="agendamento.html">Agendar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__nav-titulo">Contato</p>
+        <ul class="footer__nav-lista">
+          <li><a href="contato.html">Fale conosco</a></li>
+          <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__fundo">
+      <p>© 2025 Kings Barbearia. Todos os direitos reservados.</p>
+      <p>Desenvolvido com 💛 para o projeto acadêmico</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav').classList.toggle('aberto');
+    }
+
+    function enviarForm(e) {
+      e.preventDefault();
+      document.querySelector('.form-agendamento').style.display = 'none';
+      document.getElementById('mensagem-sucesso').classList.remove('oculto');
+      window.scrollTo({ top: document.getElementById('mensagem-sucesso').offsetTop - 100, behavior: 'smooth' });
+    }
+
+    // Define data mínima como hoje
+    const hoje = new Date().toISOString().split('T')[0];
+    document.getElementById('data').setAttribute('min', hoje);
+  </script>
+</body>
+</html>
